@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/kaitou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/kaitou"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/kaitou"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/height"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/weight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="点我计算bmi"
+            app:layout_constraintTop_toBottomOf="@id/height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suggestion"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/bmi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

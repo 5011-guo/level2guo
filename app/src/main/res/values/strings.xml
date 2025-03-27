@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="kaitou">BMI计算器</string>
+    <string name="weight">请输入体重</string>
+    <string name="height">请输入身高</string>
+    <string name="suggestion">健康建议</string>
+
+</resources>
