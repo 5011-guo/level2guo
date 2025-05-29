@@ -69,7 +69,7 @@ public class huilv extends AppCompatActivity implements Runnable {
                 super.handleMessage(msg);
             }
         };
-
+/*通常Thread t = new Thread(this);放在handler后面*/
         Log.i(TAG, "onCreate: 启动线程");
         Thread t = new Thread(this);
         t.start();
@@ -130,14 +130,14 @@ public class huilv extends AppCompatActivity implements Runnable {
             Thread.sleep(5000);
             URL url = null;
             try {
-                url = new URL("https://www.boc.cn/sourcedb/whpj/");
+                url = new URL("https://www.huilvbiao.com/bank/spdb");
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
                 InputStream in = http.getInputStream();
 
                 String html = inputStream2String(in);
                 Log.i(TAG, "run: html=" + html);
 
-                Document doc = Jsoup.connect("https://www.boc.cn/sourcedb/whpj/").get();
+                Document doc = Jsoup.connect("https://www.huilvbiao.com/bank/spdb").get();
                 Log.i(TAG, "run: title=" + doc.title());
                 Elements tables = doc.getElementsByTag("table");
                 Element table = tables.get(1);

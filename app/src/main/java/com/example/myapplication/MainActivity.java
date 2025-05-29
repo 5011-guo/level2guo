@@ -1,4 +1,4 @@
-package com.example.myapplication;
+/*package com.example.myapplication;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -61,4 +61,4 @@ public class MainActivity extends AppCompatActivity {
             return "健康建议:1肥胖,多锻炼,少吃";
         }
     }
-}
+}*/
